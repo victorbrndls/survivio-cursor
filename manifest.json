@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Surviv.io Cursor Changer",
+  "version": "1.0.1",
+  "description": "Addon to change the cursor in the game",
+  "homepage_url": "https://github.com/Harystolho/survivio-cursor",
+  "permissions": [
+    "activeTab"
+  ],
+  "applications": {
+    "gecko": {
+      "id": "survivio_cursor@email.com"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://surviv.io/"
+      ],
+      "js": [
+        "/content_script.js"
+      ]
+    }
+  ]
+}
